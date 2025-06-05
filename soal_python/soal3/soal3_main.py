@@ -34,7 +34,7 @@ class ManageData():
             os.makedirs(self.output_dir)
 
 
-    def runSampling(self):
+    def runSampling(self)->None:
         sampler = WeatherSampler(api_key=self.api_key)
         prev_timing = 0
         while True:
@@ -53,7 +53,7 @@ class ManageData():
                 prev_timing = current_time
     
 
-    def _saveToJson(self, data):
+    def _saveToJson(self, data: dict)->None:
         if os.path.exists(self.output_file):
             with open(self.output_file, 'r') as f:
                 try:
@@ -89,7 +89,7 @@ def getCityName()->str:
 def main():
     GetData = ManageData(api_key, "London", 1)
     GetData.runSampling()
-
+    
 
 if __name__=="__main__":
     main()

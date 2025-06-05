@@ -1,0 +1,4 @@
+Link jawaban : 
+- https://wokwi.com/projects/432896082156537857
+
+- https://wokwi.com/projects/432906330164209665 -> with freeRTOS framework

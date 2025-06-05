@@ -69,7 +69,7 @@ class DataPublisher:
                 ])
 
     
-    def onConnect(self, client, userdata, flags, reason_code, properties):
+    def onConnect(self, client, userdata, flags, reason_code, properties)->None:
         print(f"Connected with result code {reason_code}")
 
     
@@ -102,14 +102,14 @@ class DataPublisher:
                 prev_time = current_time
 
 
-def main():
+def main()->None:
     name = input("Masukkan nama kandidat (satu kata, tanpa spasi): ").strip()
     if " " in name or not name:
         print("Nama kandidat harus satu kata tanpa spasi dan tidak boleh kosong.")
         return
     
     Publisher = DataPublisher(name=name)
-    Publisher.pubLoop()    
+    Publisher.pubLoop()
 
 if __name__ == "__main__":
     main()
