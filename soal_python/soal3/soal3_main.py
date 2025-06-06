@@ -28,7 +28,7 @@ class ManageData():
         self.city = city_name
         self.weather_data = None
 
-        self.output_dir = "log"
+        self.output_dir = "soal_python\log"
         self.output_file = os.path.join(self.output_dir, "data_weather.json")
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)

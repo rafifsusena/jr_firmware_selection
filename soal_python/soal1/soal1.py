@@ -16,7 +16,7 @@ Writing rule :  variable, file name = snake_case
 '''
 
 from random import randint #generate random number for the input list
-
+from soal_python.function.function import get_user_input_series
 
 class CalcStat():
     def __init__(self, input_list: list):
@@ -83,8 +83,13 @@ class CalcStat():
     
 
 def main()->None:
-    # input_val = [randint(0, 100) for n in range(10)]
-    input_val = [4, 2, 2, 3, 3, 4, 4, 2, 1, 3]
+    angka = get_user_input_series()
+    if angka == None:
+        print("✅ Hasilkan angka acak", end="\n\n")
+        input_val = [randint(0, 100) for n in range(10)]
+    else:
+        print("✅ Deret angka yang dimasukkan:", angka, end="\n\n")
+        input_val = angka
 
     CalcResult = CalcStat(input_list=input_val)
     CalcResult.getResult()

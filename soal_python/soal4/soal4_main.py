@@ -48,7 +48,7 @@ class DataPublisher:
         self.client.loop_start() #Network loop non-blocking
         
         #Log directory
-        self.log_dir = "log"
+        self.log_dir = "soal_python\log"
         if not os.path.exists(self.log_dir):
             os.makedirs(self.log_dir)
         
