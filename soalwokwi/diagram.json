@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "author": "Rafif Susena",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-s3-devkitc-1", "id": "esp", "top": 38.22, "left": 14.17, "attrs": {} },
+    {
+      "type": "wokwi-ds1307",
+      "id": "rtc1",
+      "top": -4.7,
+      "left": -98.8,
+      "rotate": 270,
+      "attrs": {}
+    },
+    { "type": "wokwi-dht22", "id": "dht1", "top": 0.3, "left": -178.2, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 148.8,
+      "left": -134.95,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "dht1:VCC", "esp:5V", "red", [ "v144", "h182.4" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "rtc1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "rtc1:5V", "esp:5V", "red", [ "v0" ] ],
+    [ "rtc1:SDA", "esp:8", "green", [ "v0" ] ],
+    [ "rtc1:SCL", "esp:9", "green", [ "v0" ] ],
+    [ "r1:2", "esp:5V", "green", [ "h0", "v75.6" ] ],
+    [ "dht1:SDA", "esp:18", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
