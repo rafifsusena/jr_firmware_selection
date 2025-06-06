@@ -58,16 +58,16 @@ class DataPublisher:
 
     
     def _logToCsv(self, timestamp_gmt7: str, sensor: list, status: str):
-            filename = f"mqtt_log_{datetime.now().strftime('%d%m%y')}.csv"
-            filepath = os.path.join(self.log_dir, filename)
-            write_header = not os.path.exists(filepath)
-            with open(filepath, mode="a", newline="") as file:
-                writer = csv.writer(file, delimiter=';')
-                if write_header:
-                    writer.writerow(["timestamp", "sensor1", "sensor2", "sensor3", "sensor4", "sensor5", "status"])
-                writer.writerow([
-                    str(timestamp_gmt7), sensor[0], sensor[1], sensor[2], sensor[3], sensor[4], status
-                ])
+        filename = f"mqtt_log_{datetime.now().strftime('%d%m%y')}.csv"
+        filepath = os.path.join(self.log_dir, filename)
+        write_header = not os.path.exists(filepath)
+        with open(filepath, mode="a", newline="") as file:
+            writer = csv.writer(file, delimiter=';')
+            if write_header:
+                writer.writerow(["timestamp", "sensor1", "sensor2", "sensor3", "sensor4", "sensor5", "status"])
+            writer.writerow([
+                str(timestamp_gmt7), sensor[0], sensor[1], sensor[2], sensor[3], sensor[4], status
+            ])
 
     
     def onConnect(self, client, userdata, flags, reason_code, properties)->None:

@@ -142,7 +142,11 @@ version = 1
 firmware = '.pio\build\esp32-s3-devkitc-1\firmware.bin'
 elf = '.pio\build\esp32-s3-devkitc-1\firmware.elf'
 
-Build project (klik ikon centang di pojok VS Code).
+Atau bisa juga dengan melakukan download file pada : https://github.com/rafifsusena/jr_firmware_selection/tree/platform_io_wokwi
+
+Lalu pada platform I/O, user hanya perlu melakukan open project ke directory tempat file tersebut terunduh. 
+
+Build project (klik ikon centang di pojok bawah VS Code (setelah ikon rumah)).
 
 Tekan Ctrl+Shift+P → pilih Wokwi: Request a new license
 

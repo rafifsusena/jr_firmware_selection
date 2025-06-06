@@ -306,5 +306,33 @@
         "temp_unit": "C",
         "humidity": 70,
         "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T18:08:19.499307",
+        "temp": 31.98,
+        "temp_unit": "C",
+        "humidity": 63,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T18:08:24.576463",
+        "temp": 31.98,
+        "temp_unit": "C",
+        "humidity": 63,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T18:18:16.713704",
+        "temp": 32.17,
+        "temp_unit": "C",
+        "humidity": 62,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T18:18:21.697256",
+        "temp": 32.17,
+        "temp_unit": "C",
+        "humidity": 62,
+        "humidity_unit": "%"
     }
 ]

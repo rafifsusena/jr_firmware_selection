@@ -30,9 +30,9 @@ class CalcStat():
 
         print("●	Value \t\t: ", end="")
         print(*self.input_list, sep=", ")
+        print(f"●	Nilai Rata-Rata : {mean}")
         print(f"●	Nilai Maksimum \t: {max_num}")
         print(f"●	Nilai Minimum \t: {min_num}")
-        print(f"●	Nilai Rata-Rata : {mean}")
         print(f"●	Nilai Modus \t: " + ", ".join(map(str, modes)))
 
 
@@ -68,7 +68,7 @@ class CalcStat():
                 freq[val] = 1
 
         # Cari frekuensi maksimum
-        max_freq = 0
+        max_freq = 1
         for key in freq:
             if freq[key] > max_freq:
                 max_freq = freq[key]
@@ -76,7 +76,7 @@ class CalcStat():
         # Kumpulkan semua angka dengan frekuensi maksimum
         modes = []
         for key in freq:
-            if freq[key] == max_freq:
+            if freq[key] == max_freq and max_freq != 1:
                 modes.append(key)
         
         return modes

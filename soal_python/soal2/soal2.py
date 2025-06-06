@@ -10,7 +10,7 @@ Writing rule :  variable, file name = snake_case
     - Port = 8080
     - Method = POST
     - Endpoint = /api/<nama kandidat>
-    - Input = {"nilai"L (nilai 0-100)} -> integer
+    - Input = {"nilai": (nilai 0-100)} -> integer
     - Processing = 0-34:E; 35-49:D; 50-64:C; 65-79:B; 80-100:A
     - Processing = Invalid jika nilai tidak dalam 0-100, bukan angka dan key JSON tidak ada
     - Status nilai = A,B,C:lulus; D,E,Invalid:tidak lulus
@@ -53,6 +53,5 @@ def getResponse():
     return jsonify({"nama": NAMA_KANDIDAT, "nilai": nilai_huruf, "status": status_lulus}), 200
 
 
-
 if __name__=="__main__":
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=8080, debug=False)
