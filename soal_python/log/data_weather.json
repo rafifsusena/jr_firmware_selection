@@ -1,117 +1,5 @@
 [
     {
-        "temp": 16.09,
-        "temp_unit": "C",
-        "humidity": 70,
-        "humidity_unit": "%",
-        "timestamp": "2025-06-05T08:26:54.997239"
-    },
-    {
-        "temp": 16.09,
-        "temp_unit": "C",
-        "humidity": 70,
-        "humidity_unit": "%",
-        "timestamp": "2025-06-05T08:26:55.992914"
-    },
-    {
-        "temp": 16.09,
-        "temp_unit": "C",
-        "humidity": 70,
-        "humidity_unit": "%",
-        "timestamp": "2025-06-05T08:26:56.978867"
-    },
-    {
-        "temp": 16.09,
-        "temp_unit": "C",
-        "humidity": 70,
-        "humidity_unit": "%",
-        "timestamp": "2025-06-05T08:26:57.951817"
-    },
-    {
-        "temp": 16.09,
-        "temp_unit": "C",
-        "humidity": 70,
-        "humidity_unit": "%",
-        "timestamp": "2025-06-05T08:26:58.942076"
-    },
-    {
-        "temp": 16.09,
-        "temp_unit": "C",
-        "humidity": 70,
-        "humidity_unit": "%",
-        "timestamp": "2025-06-05T08:27:00.311004"
-    },
-    {
-        "temp": 16.09,
-        "temp_unit": "C",
-        "humidity": 70,
-        "humidity_unit": "%",
-        "timestamp": "2025-06-05T08:27:00.981897"
-    },
-    {
-        "temp": 16.09,
-        "temp_unit": "C",
-        "humidity": 70,
-        "humidity_unit": "%",
-        "timestamp": "2025-06-05T08:27:01.993089"
-    },
-    {
-        "timestamp": "2025-06-05T08:35:50.916299",
-        "temp": 15.95,
-        "temp_unit": "C",
-        "humidity": 71,
-        "humidity_unit": "%"
-    },
-    {
-        "timestamp": "2025-06-05T08:35:51.887222",
-        "temp": 15.95,
-        "temp_unit": "C",
-        "humidity": 71,
-        "humidity_unit": "%"
-    },
-    {
-        "timestamp": "2025-06-05T08:35:52.850642",
-        "temp": 15.95,
-        "temp_unit": "C",
-        "humidity": 71,
-        "humidity_unit": "%"
-    },
-    {
-        "timestamp": "2025-06-05T08:35:53.879546",
-        "temp": 15.95,
-        "temp_unit": "C",
-        "humidity": 71,
-        "humidity_unit": "%"
-    },
-    {
-        "timestamp": "2025-06-05T08:35:54.907021",
-        "temp": 15.95,
-        "temp_unit": "C",
-        "humidity": 71,
-        "humidity_unit": "%"
-    },
-    {
-        "timestamp": "2025-06-05T08:35:55.869401",
-        "temp": 15.95,
-        "temp_unit": "C",
-        "humidity": 71,
-        "humidity_unit": "%"
-    },
-    {
-        "timestamp": "2025-06-05T08:36:16.176385",
-        "temp": 15.95,
-        "temp_unit": "C",
-        "humidity": 71,
-        "humidity_unit": "%"
-    },
-    {
-        "timestamp": "2025-06-05T08:36:17.112256",
-        "temp": 15.95,
-        "temp_unit": "C",
-        "humidity": 71,
-        "humidity_unit": "%"
-    },
-    {
         "timestamp": "2025-06-05T08:36:18.209329",
         "temp": 15.95,
         "temp_unit": "C",
@@ -221,6 +109,202 @@
         "temp": 15.95,
         "temp_unit": "C",
         "humidity": 71,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:32.774937",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:33.901088",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:34.821433",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:35.948214",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:36.767608",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:37.686153",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:38.918307",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:39.737606",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:40.863806",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:41.887100",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:42.912975",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:43.730147",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:44.689378",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:45.592473",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:46.586138",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:48.031875",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:48.850554",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:49.773105",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:50.694564",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:51.671625",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:52.470605",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:53.513988",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:54.545900",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:56.019384",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:07:56.633725",
+        "temp": 12.47,
+        "temp_unit": "C",
+        "humidity": 86,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:12:17.861648",
+        "temp": 28.63,
+        "temp_unit": "C",
+        "humidity": 70,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:12:22.672019",
+        "temp": 28.63,
+        "temp_unit": "C",
+        "humidity": 70,
+        "humidity_unit": "%"
+    },
+    {
+        "timestamp": "2025-06-06T15:12:27.999467",
+        "temp": 28.63,
+        "temp_unit": "C",
+        "humidity": 70,
         "humidity_unit": "%"
     }
 ]

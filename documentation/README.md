@@ -25,7 +25,8 @@ python -m venv venv
 * **Windows:**
 
 ```bash
-venv\Scripts\activate
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+venv\Scripts\Activate.ps1
 ```
 
 * **Linux/macOS:**
@@ -33,6 +34,7 @@ venv\Scripts\activate
 ```bash
 source venv/bin/activate
 ```
+Anda juga bisa langsung menjalankannya tanpa environtment variable, program python dibuat pada laptop dengan instalasi python 3.12.3.
 
 4. **Install dependensi yang dibutuhkan:**
 
@@ -90,17 +92,65 @@ Untuk menjalankan soal 3 dan soal 4, cukup jalankan file Python langsung:
 
 * **Melalui terminal VS Code:**
 
-  * Klik kanan pada file `soal3.py` atau `soal4.py`
-  * Pilih `Run Code` atau `Run Python File in Terminal`
-
-* **Atau jalankan manual:**
-
 ```bash
 python soal_python/soal3/soal3.py
 python soal_python/soal4/soal4.py
 ```
 
 Ikuti instruksi yang muncul pada terminal setelah program dijalankan.
+
+---
+
+Soal 5 (Soal Wokwi)
+
+Soal 5 atau soal wokwi adalah program untuk melakukan publish nilai dari RTC DS1307 dan sensor DHT22. Program disimulasikan melalui wokwi.com, namun terdapat kendala seperti:
+
+Program utama lambat dijalankan
+
+Nilai DHT22 tidak muncul saat digabungkan dengan sistem (walau bisa jika sendiri)
+
+Rekomendasi Alternatif: Jalankan melalui PlatformIO + Wokwi Extension
+
+Install di VS Code:
+
+PlatformIO IDE
+
+Wokwi for VS Code
+
+Buat Project Baru:
+
+PlatformIO sidebar → PIO Home → Open → New Project
+
+Nama bebas
+
+Board: Espressif ESP-32-S3-DevKitC-1
+
+Framework: Arduino
+
+Klik Finish
+
+Salin kode Wokwi ke folder src, sesuaikan nama file.
+
+Tambahkan dua file di root project:
+
+diagram.json (isi dari wokwi)
+
+wokwi.toml:
+
+[wokwi]
+version = 1
+firmware = '.pio\build\esp32-s3-devkitc-1\firmware.bin'
+elf = '.pio\build\esp32-s3-devkitc-1\firmware.elf'
+
+Build project (klik ikon centang di pojok VS Code).
+
+Tekan Ctrl+Shift+P → pilih Wokwi: Request a new license
+
+Ikuti instruksi, tekan GET YOUR LICENSE
+
+Lalu masukkan manual jika perlu dengan Wokwi: Manually Enter License Key
+
+Start simulasi: Ctrl+Shift+P → Wokwi: Start Simulation
 
 ---
 

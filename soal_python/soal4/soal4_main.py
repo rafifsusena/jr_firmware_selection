@@ -32,7 +32,8 @@ Writing rule :  variable, file name = snake_case
 import time, json, csv, os
 import paho.mqtt.client as mqtt
 from datetime import datetime, timedelta
-from soal4_function import GetData
+from soal_python.soal4.soal4_function import GetData
+from soal_python.function.function import getCandidateName
 
 NAMA_KANDIDAT = "rafif"
 
@@ -48,7 +49,7 @@ class DataPublisher:
         self.client.loop_start() #Network loop non-blocking
         
         #Log directory
-        self.log_dir = "soal_python\log"
+        self.log_dir = "soal_python/log"
         if not os.path.exists(self.log_dir):
             os.makedirs(self.log_dir)
         
@@ -103,11 +104,9 @@ class DataPublisher:
 
 
 def main()->None:
-    name = input("Masukkan nama kandidat (satu kata, tanpa spasi): ").strip()
-    if " " in name or not name:
-        print("Nama kandidat harus satu kata tanpa spasi dan tidak boleh kosong.")
-        return
-    
+    name = None
+    while name == None:
+        name = getCandidateName()
     Publisher = DataPublisher(name=name)
     Publisher.pubLoop()
 

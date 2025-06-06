@@ -16,3 +16,26 @@ def get_user_input_series():
             return number_list
         except ValueError:
             print("❌ Input mengandung nilai yang bukan angka. Harap hanya masukkan angka yang valid.\n")
+
+def getSamplingInterval()->float:
+    while True:
+        sampling_interval = input("Input the sampling interval (in sec, > 0): ")
+        try:
+            interval = float(sampling_interval)
+            if interval>0:
+                return interval
+            else:
+                print("Interval must be above 0, try again ...")
+        except ValueError:
+            print("Invalid input, must be a number and above 0")
+
+
+def getCityName()->str:
+    return str(input("Name of the city : "))
+
+def getCandidateName()->str:
+    name = input("Masukkan nama kandidat (satu kata, tanpa spasi): ").strip()
+    if " " in name or not name:
+        print("Nama kandidat harus satu kata tanpa spasi dan tidak boleh kosong.")
+        return
+    return name

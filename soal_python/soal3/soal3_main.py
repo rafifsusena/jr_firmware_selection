@@ -17,7 +17,8 @@ Writing rule :  variable, file name = snake_case
 '''
 import json, time, os
 from datetime import datetime, timedelta
-from soal3_function import WeatherSampler
+from soal_python.soal3.soal3_function import WeatherSampler
+from soal_python.function.function import getCityName, getSamplingInterval
 
 api_key = "83b1a7b1aac758c61e46b963659a395e"
 
@@ -28,7 +29,7 @@ class ManageData():
         self.city = city_name
         self.weather_data = None
 
-        self.output_dir = "soal_python\log"
+        self.output_dir = "soal_python/log"
         self.output_file = os.path.join(self.output_dir, "data_weather.json")
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
@@ -42,7 +43,7 @@ class ManageData():
             current_time = time.time_ns()/1000000 #convert to ms
             if (current_time-prev_timing)>self.periode:
                 self.weather_data = sampler.getWeatherData(self.city)
-                if self.weather_data['status'] == '200:Success':
+                if self.weather_data['status'][:3] == "200":
                     print(f"{timestamp.strftime('%Y-%m-%d %H:%M:%S')} - Success Running Sampling Data Weather with Result "
                         f"Temperature {self.weather_data["message"]["temp"]} {self.weather_data["message"]["temp_unit"]} & Humidity {self.weather_data["message"]["humidity"]} {self.weather_data["message"]["humidity_unit"]}")
                     self._saveToJson(self.weather_data["message"])
@@ -67,29 +68,13 @@ class ManageData():
 
         with open(self.output_file, 'w') as f:
             json.dump(all_data, f, indent=4)
-            
-
-def getSamplingInterval()->float:
-    while True:
-        sampling_interval = input("Input the sampling interval (in sec, > 0): ")
-        try:
-            interval = float(sampling_interval)
-            if interval>0:
-                return interval
-            else:
-                print("Interval must be above 0, try again ...")
-        except ValueError:
-            print("Invalid input, must be a number and above 0")
-
-
-def getCityName()->str:
-    return str(input("Name of the city : "))
 
 
 def main():
-    GetData = ManageData(api_key, "London", 1)
+    city_name = getCityName()
+    interval = getSamplingInterval()
+    GetData = ManageData(api_key, city_name, interval)
     GetData.runSampling()
-    
 
 if __name__=="__main__":
     main()
