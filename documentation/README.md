@@ -105,37 +105,37 @@ Soal 5 (Soal Wokwi)
 
 Soal 5 atau soal wokwi adalah program untuk melakukan publish nilai dari RTC DS1307 dan sensor DHT22. Program disimulasikan melalui wokwi.com, namun terdapat kendala seperti:
 
-Program utama lambat dijalankan
+* Program utama lambat dijalankan
 
-Nilai DHT22 tidak muncul saat digabungkan dengan sistem (walau bisa jika sendiri)
+* Nilai DHT22 tidak muncul saat digabungkan dengan sistem (walau bisa jika sendiri)
 
 Rekomendasi Alternatif: Jalankan melalui PlatformIO + Wokwi Extension
 
 Install di VS Code:
 
-PlatformIO IDE
+* PlatformIO IDE
 
-Wokwi for VS Code
+* Wokwi for VS Code
 
 Buat Project Baru:
 
-PlatformIO sidebar → PIO Home → Open → New Project
+* PlatformIO sidebar → PIO Home → Open → New Project
 
-Nama bebas
+* Nama bebas
 
-Board: Espressif ESP-32-S3-DevKitC-1
+* Board: Espressif ESP-32-S3-DevKitC-1
 
-Framework: Arduino
+* Framework: Arduino
 
-Klik Finish
+* Klik Finish
 
-Salin kode Wokwi ke folder src, sesuaikan nama file.
+* Salin kode Wokwi ke folder src, sesuaikan nama file.
 
 Tambahkan dua file di root project:
 
-diagram.json (isi dari wokwi)
+* diagram.json (isi dari wokwi)
 
-wokwi.toml:
+* wokwi.toml:
 
 [wokwi]
 version = 1
@@ -144,17 +144,17 @@ elf = '.pio\build\esp32-s3-devkitc-1\firmware.elf'
 
 Atau bisa juga dengan melakukan download file pada : https://github.com/rafifsusena/jr_firmware_selection/tree/platform_io_wokwi
 
-Lalu pada platform I/O, user hanya perlu melakukan open project ke directory tempat file tersebut terunduh. 
+* Lalu pada platform I/O, user hanya perlu melakukan open project ke directory tempat file tersebut terunduh. 
 
-Build project (klik ikon centang di pojok bawah VS Code (setelah ikon rumah)).
+* Build project (klik ikon centang di pojok bawah VS Code (setelah ikon rumah)).
 
-Tekan Ctrl+Shift+P → pilih Wokwi: Request a new license
+* Tekan Ctrl+Shift+P → pilih Wokwi: Request a new license
 
-Ikuti instruksi, tekan GET YOUR LICENSE
+* Ikuti instruksi, tekan GET YOUR LICENSE
 
-Lalu masukkan manual jika perlu dengan Wokwi: Manually Enter License Key
+* Lalu masukkan manual jika perlu dengan Wokwi: Manually Enter License Key
 
-Start simulasi: Ctrl+Shift+P → Wokwi: Start Simulation
+* Start simulasi: Ctrl+Shift+P → Wokwi: Start Simulation
 
 ---
 
